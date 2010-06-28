@@ -1,14 +1,14 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: igoreanarachel_development
+  database: jadesign_development
   username: root
   password:
 
 test:
   adapter: mysql
   encoding: utf8
-  database: igoreanarachel_test
+  database: jadesign_test
   username: root
   password:
 
