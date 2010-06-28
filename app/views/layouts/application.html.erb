@@ -7,11 +7,11 @@
 
 	<%= metatags(@metatag_object) -%>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="content-language" content="en"/>
-	<meta name="author" content="DBurns Design - Professional Website Design in Los Angeles, California"/>
+	<meta http-equiv="content-language" content="pt-BR"/>
+	<meta name="author" content="Philipe Casarotte - Ruby on Rails Development"/>
 	<meta name="distribution" content="global"/>
 	<meta name="revisit-after" content="30 days"/>
-	<meta name="copyright" content="DBurns Design"/>
+	<meta name="copyright" content="Philipe Casarotte"/>
 
 	<%= stylesheet_link_tag "default" %>
 
@@ -22,7 +22,7 @@
 	<%= yield :head %>
 </head>
 <body>
-	<div id="main" <%= "class='home'" if current_page?(root_path) %>>
+	<div id="main">
 		<div id="content">
 			<ul id="menu">
 				<li><%= link_to "Home", root_path %></li>
@@ -32,10 +32,10 @@
 				<li><%= link_to "Mensagens", posts_path %></li>
 				<li><%= link_to "Lista de Presentes", page_path("lista-de-presentes") %></li>
 			</ul>
-			<div id="content_cms" <%= "class='home'" if current_page?(root_path) %>>
+			<div id="content_cms">
 				<%= yield  %>
 			</div>
-			<div id="footer"><%= link_to 'Ruby on Rails Development', 'http://www.philipecasarotte.com.br', :target => '_blank' %> by Philipe Casarotte<br/>(irmão da noiva ou cunhado do noivo)</div>
+			<p id="footer"><%= link_to 'Ruby on Rails Development', 'http://www.philipecasarotte.com.br', :target => '_blank' %> by Philipe Casarotte</p>
 		</div>
 	</div>
 </body>

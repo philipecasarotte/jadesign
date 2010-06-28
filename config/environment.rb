@@ -73,7 +73,7 @@ Rails::Initializer.run do |config|
   old_verbose = $VERBOSE
   $VERBOSE = nil
 
-  SITE_NAME = 'JA Design | Joyce Andradde, Designer de Interiores, Decoradora'
+  SITE_NAME = 'JA Design | Joyce Andrade, Designer de Interiores, Decoradora'
   SITE_DOMAIN = 'joiceandrade.com.br'
   SITE_URL = "http://www.#{SITE_DOMAIN}/"
   SITE_EMAIL = "contato@#{SITE_DOMAIN}"
